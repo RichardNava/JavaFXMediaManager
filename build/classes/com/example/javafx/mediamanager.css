@@ -1,0 +1,114 @@
+/*
+ * Copyright (c) 2008, 2011 Oracle and/or its affiliates.
+ * All rights reserved. Use is subject to license terms.
+ *
+ * This file is available and licensed under the following license:
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ *  - Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ *  - Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in
+ *    the documentation and/or other materials provided with the distribution.
+ *  - Neither the name of Oracle Corporation nor the names of its
+ *    contributors may be used to endorse or promote products derived
+ *    from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+/* Mostly from ensemble2.css */
+
+#main {
+    -fx-background-color: #333333;
+    -fx-padding: 1px;
+}
+#ModalDimmer {
+    -fx-background-color: rgba(0,0,0,0.8);
+}
+/* Category Page Styles */
+.category-page {
+    -fx-background-image: url("texture.png");
+    -fx-background-repeat: repeat repeat;
+    -fx-background-position: left top;
+    -fx-padding: 8px;
+}
+.category-page .page-header {
+    -fx-padding: 8px 0 10px 0;
+    -fx-border-color: null;
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(white, #acacac);
+    -fx-effect: innershadow( three-pass-box , rgba(255,255,255,0.7) , 0, 0.0 , 0 , -1 );
+}
+
+.page-subheader {
+    -fx-padding: 0px 0 10px 0;
+    -fx-border-color: null;
+    -fx-font-size: 1.0em;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(white, #acacac);
+    -fx-effect: innershadow( three-pass-box , rgba(255,255,255,0.7) , 0, 0.0 , 0 , -1 );
+}
+
+.category-header {
+    /* -fx-font-size: 1.5em;
+     -fx-font-weight: bold;
+     -fx-text-fill: #c1c8cc; */
+    -fx-padding: 8px 0 10px 0;
+    -fx-background-color: rgba(0,0,0,0.12);
+    -fx-background-insets: 4 -8 4 -8;
+    -fx-border-color: rgba(255,255,255,0.2) transparent rgba(255,255,255,0.2) transparent;
+    -fx-border-insets: 3 -8 3 -8;
+
+    -fx-padding: 8px 0 10px 0;
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(white, #acacac);
+}
+.category-header Text{
+    /* -fx-effect: dropshadow( three-pass-box , black , 0, 0.0 , 0 , 1 ); */
+    -fx-effect: innershadow( three-pass-box , rgba(255,255,255,0.7) , 0, 0.0 , 0 , -1 );
+}
+
+
+.category-page-flow {
+    -fx-padding: 3px 0 8px 0;
+}
+.sample-tile {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ButtonSkin";
+    -fx-text-fill: white;
+    -fx-graphic-hpos: center;
+    -fx-graphic-vpos: top;
+    -fx-alignment: center;
+    -fx-padding: 4px 4px 3px 4px;
+}
+.sample-tile:hover, .selected {
+    /*   -fx-border-color: derive(-fx-accent,80%), -fx-accent, derive(-fx-accent,80%);
+       -fx-border-insets: -1,0,1;
+       -fx-border-radius: 7,6,5; */
+    -fx-effect: dropshadow( three-pass-box , -fx-accent , 10 , 0.7 , 0 , 0 );
+}
+
+.metadata {
+    -fx-padding: 10px 10px 10px 10px;
+}
+
+.white-text {
+    -fx-fill: white;
+    -fx-text-fill: linear-gradient(white, #acacac);
+}
+

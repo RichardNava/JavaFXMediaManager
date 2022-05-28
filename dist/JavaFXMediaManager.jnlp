@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXMediaManager.jnlp">
+  <information>
+    <title>JavaFXMediaManager</title>
+    <vendor>richa</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaFXMediaManager.jar" size="1249479" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.example.javafx.MediaApplication"  name="JavaFXMediaManager" />
+  <update check="always"/>
+</jnlp>
